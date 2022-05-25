@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Playball&family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sistema de Recados - Cadastro</title>
+</head>
+<body>
+    <main>
+        <section class="primeira-coluna">            
+        </section>
+
+        <section class="segunda-coluna">
+            <div class="interna-2a-coluna">
+                <form id="cadastro">
+                    <h2>Crie sua conta</h2>
+                    <input type="email" placeholder="E-mail" id="input-email" required>
+                    <br>
+                    <div id="notificacao-email"></div>                    
+                    <input type="password" autocomplete="" placeholder="Senha" id="input-senha" required>
+                    <br>
+                    <input type="password" autocomplete="" placeholder="Confirme a sua Senha" id="input-repetir-senha" required>
+                    <div id="senha-regras">
+                        <h3>Sua senha deve conter:</h3>
+                        <p>- Ao menos 8 caracteres <span class="senha-verificado" id="senha-tamanho">&#10004;</span></p>
+                        <p>- Letras e números <span class="senha-verificado" id="senha-maiusculas-minusculas">&#10004;</span></p>
+                        <p>- Ao menos um caractere especial (@$!%*?&) <span class="senha-verificado" id="senha-caracteres">&#10004;</span></p>
+                    </div>
+                    <button type="submit" class="criar-conta" id="btn-enviar" disabled >Enviar</button>                
+                </form>
+                <a href="./login.html">Ir para a página de login</a>
+            </div>
+            
+        </section>
+    </main>
+    <script src="./js/cadastro.js"></script>
+</body>
+</html>
